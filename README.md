@@ -13,13 +13,13 @@ Functionalities:
     * Email-Id
 
 2. Edit and Delete:
-Be able to edit and delete employees from the database. An employee's details are automatically populated when the user clicks the edit button
+Be able to edit and delete employees from the database. An employee's details are automatically populated when the admin clicks the edit button.
 
 3. Display employees:
-Be able to retrieve employees from a REST API and display them
+Be able to retrieve employees from a REST API and display them.
 
 5. REST API:
-Built REST API using Springboot and Angular to implement above functionalities
+Built REST API using Springboot and Angular to implement above functionalities.
 
 Used technologies:
     * Angular
