@@ -11,6 +11,7 @@ import jakarta.persistence.Table;
 @Table(name = "employee_b")
 public class Employee {
 	@Id
+//	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	private long id;
 	
 	@Column(name="first_name")
@@ -19,8 +20,39 @@ public class Employee {
 	@Column(name="last_name")
 	private String lastName;
 	
+	
+	public Employee(long id, String firstName, String lastName, String role, String emailId) {
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		Role = role;
+		this.emailId = emailId;
+	}
+
+	public Employee(String firstName, String lastName, String role, String emailId) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		Role = role;
+		this.emailId = emailId;
+	}
+
+	public String getRole() {
+		return Role;
+	}
+
+	public void setRole(String role) {
+		Role = role;
+	}
+
+	private String Role;
+	
 	@Column(name="email_id")
 	private String emailId;
+	
+	
+	
+	
+
 
 	public long getId() {
 		return id;

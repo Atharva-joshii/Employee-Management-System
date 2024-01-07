@@ -3,6 +3,8 @@ package com.example.demo.controller;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -28,6 +30,8 @@ public class EmployeeController {
 	@Autowired
 	private EmployeeRepository employeeRepository;
 	
+	
+
 	// get all employees
 	@GetMapping("/employees")
 	public List<Employee> getAllEmployees(){
@@ -35,7 +39,7 @@ public class EmployeeController {
 	}		
 	
 	// create employee rest api
-	@PostMapping("/employees")
+	@PostMapping("/AddEmployee")
 	public Employee createEmployee(@RequestBody Employee employee) {
 		return employeeRepository.save(employee);
 	}
@@ -50,13 +54,14 @@ public class EmployeeController {
 	
 	// update employee rest api
 	
-	@PutMapping("/employees/{id}")
+	@PutMapping("/UpdateEmployees/{id}")
 	public ResponseEntity<Employee> updateEmployee(@PathVariable Long id, @RequestBody Employee employeeDetails){
 		Employee employee = employeeRepository.findById(id)
 				.orElseThrow(() -> new ResourceNotFound("Employee not exist with id :" + id));
 		
 		employee.setFirstName(employeeDetails.getFirstName());
 		employee.setLastName(employeeDetails.getLastName());
+		employee.setRole(employeeDetails.getRole());
 		employee.setEmailId(employeeDetails.getEmailId());
 		
 		Employee updatedEmployee = employeeRepository.save(employee);
