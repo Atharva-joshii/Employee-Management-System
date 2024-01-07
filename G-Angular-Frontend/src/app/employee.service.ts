@@ -15,7 +15,7 @@ export class EmployeeService {
     return this.httpClient.get(this.baseURL+'employees');
   }
 
-  createEmployee(employee: {id:number,firstName:string,lastName:string,emailId:string,Role:string}){
+  createEmployee(employee: {id:number,firstName:string,lastName:string,role:string,emailId:string}){
     return this.httpClient.post(`${this.baseURL +'AddEmployee'}`, employee).subscribe(()=>{
       this.router.navigateByUrl('/EmployeesList')
     });
@@ -25,8 +25,9 @@ export class EmployeeService {
     return this.httpClient.get(`${this.baseURL +'employees'}/${id}`);
   }
 
-  updateEmployee(employee:{id: number,firstName:string,lastName:string,emailId:string,Role:string}){
-    return this.httpClient.put(`${this.baseURL + 'UpdateEmployees'}/${employee.id}`, employee).subscribe((res:any)=>{
+  updateEmployee(employee:{id: number,firstName: string,lastName: string,role: string,emailId:string}){
+    return this.httpClient.put(`${this.baseURL + 'UpdateEmployees'}/${employee.id}`, employee)
+    .subscribe((res:any)=>{
       this.router.navigateByUrl('/EmployeesList');
     });
   }
