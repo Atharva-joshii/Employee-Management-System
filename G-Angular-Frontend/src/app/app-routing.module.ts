@@ -4,13 +4,16 @@ import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { CreateEmployeeComponent } from './create-employee/create-employee.component';
 import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
+import { HomeComponent } from './home/home.component';
+
 
 const routes: Routes = [
-  {path: 'employees', component: EmployeeListComponent},
-  {path: 'create-employee', component: CreateEmployeeComponent},
+  {path:"",component:HomeComponent},
+  {path: 'EmployeesList', component: EmployeeListComponent},
+  {path: 'AddEmployee', component: CreateEmployeeComponent},
   {path: '', redirectTo: 'employees', pathMatch: 'full'},
-  {path: 'update-employee/:id', component: UpdateEmployeeComponent},
-  {path: 'employee-details/:id', component: EmployeeDetailsComponent}
+  {path: 'UpdateEmployee/:id', component: UpdateEmployeeComponent},
+  {path: 'EmployeeDetails/:id', component: EmployeeDetailsComponent}
 ];
 
 @NgModule({
