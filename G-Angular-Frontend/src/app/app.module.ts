@@ -10,6 +10,7 @@ import { UpdateEmployeeComponent } from './update-employee/update-employee.compo
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     EmployeeDetailsComponent,
     HomeComponent,
     NavbarComponent,
+    LoginComponent,
   
   ],
   imports: [
