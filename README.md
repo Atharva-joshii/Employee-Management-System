@@ -1,9 +1,9 @@
 # Employee-Management-System
 Overview:
-An employee management system consisting of crucial work-related and important personal information about employees. Human Resources (HR) can manage their employees efficiently using this web application.
+An Employee Management System consisting of crucial work-related and important personal information about employees. Human Resources (HR) can manage their employees efficiently using this web application.
 
 Purpose:
-I created an online employee management system web application that will allow hr to add, edit, delete & see list of employees. There is also a Login Page from which Admin needs to Login to Access the Details of Employees .
+I created an online employee management system web application that will allow User to add, edit, delete & see list of employees. There is also a Login Page from which Admin needs to Login to Access the Details of Employees .
 
 Functionalities:
 1. Add employee information:
