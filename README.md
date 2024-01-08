@@ -1,9 +1,9 @@
 # Employee-Management-System
-Overview
+Overview:
 An employee management system consisting of crucial work-related and important personal information about employees. Human Resources (HR) can manage their employees efficiently using this web application.
 
-Purpose
-I created an online employee management system web application that will allow users can add, edit, update, search and delete employees. It will also allow Admin update code and assigned sections using an Admin dashboard .
+Purpose:
+I created an online employee management system web application that will allow hr to add, edit, delete & see list of employees. There is also a Login Page from which Admin needs to Login to Access the Details of Employees .
 
 Functionalities:
 1. Add employee information:
@@ -30,3 +30,29 @@ Used technologies:
     * REST API
     * Spring-MVC
     * Hibernate
+
+
+1 .Admin Page:
+![image](https://github.com/Atharva-joshii/Employee-Management-System/assets/153308730/765d5065-0fe8-47c8-b3b3-8bf3b5e06618)
+
+2.Home:
+![image](https://github.com/Atharva-joshii/Employee-Management-System/assets/153308730/d0572064-5ce8-4d48-af68-3f000d8ab5b8)
+
+3.Employee List Page:
+![image](https://github.com/Atharva-joshii/Employee-Management-System/assets/153308730/787296e9-c891-4147-a6dd-1e95f29955bb)
+
+4.Add Employee Page:
+![image](https://github.com/Atharva-joshii/Employee-Management-System/assets/153308730/6f64c90f-0afe-4549-9ee3-bde730baf00e)
+
+5.Update Employee Page:
+![image](https://github.com/Atharva-joshii/Employee-Management-System/assets/153308730/e50903a8-e61a-48e6-8ffe-73dd29aaf3b8)
+
+6.View Employee Page:
+![image](https://github.com/Atharva-joshii/Employee-Management-System/assets/153308730/51de5a1e-af1d-481d-9c3e-466b8c0bf968)
+
+
+
+
+
+
+
