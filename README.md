@@ -46,10 +46,12 @@ Used technologies:
 ![image](https://github.com/Atharva-joshii/Employee-Management-System/assets/153308730/6f64c90f-0afe-4549-9ee3-bde730baf00e)
 
 5.Update Employee Page:
-![image](https://github.com/Atharva-joshii/Employee-Management-System/assets/153308730/e50903a8-e61a-48e6-8ffe-73dd29aaf3b8)
+![image](https://github.com/Atharva-joshii/Employee-Management-System/assets/153308730/0ec2e42c-759a-4af6-b9f2-2ad36a73d028)
+
 
 6.View Employee Page:
-![image](https://github.com/Atharva-joshii/Employee-Management-System/assets/153308730/51de5a1e-af1d-481d-9c3e-466b8c0bf968)
+![image](https://github.com/Atharva-joshii/Employee-Management-System/assets/153308730/8a07d1c5-8053-4c3b-8c8b-e5a6299e79ae)
+
 
 
 
